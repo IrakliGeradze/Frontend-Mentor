@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .card{
+      width: 300px;
+      background-color: hsl(215, 32%, 27%);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .card h2{
+      font-family: Outfit;
+      font-weight: 400;
+    }
+    .card img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    h2{
+      margin: 15px 0 10px;
+      font-size: 20px;
+    }
+    .desc{
+      color: hsl(215, 51%, 70%);
+      font-size: 14px;
+      font-family: Outfit;
+      font-weight: 600;
+    }
+    .info{
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+    .price{
+      color: hsl(178, 100%, 50%);
+      display: flex;
+      gap: 5px;
+    }
+    .price img{
+      display: flex;
+      width: 9px;
+    }
+    .time{
+      display: flex;
+      gap: 5px;
+    }
+    .time img{
+      display: flex;
+      width: 15px;
+      height: 15px;
+    }
+    .creator{
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      font-size: 14px;
+      border-top: 1px solid gray;
+    }
+    .creator img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="images/image-equilibrium.jpg">
+    <h2>Equilibrium #3429</h2>
+    <p class="desc">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    <div class="info">
+      <span class="price">
+        <img src="images/icon-ethereum.svg"> 
+        0.041 ETH
+      </span>
+      <span class="time">
+        <img src="images/icon-clock.svg">
+        3 days left
+      </span>
+    </div>
+    <div class="creator">
+      <img src="images/image-avatar.png">
+      <span>Creation of Jules Wyvern</span>
+    </div>
+  </div>
+</body>
+</html>

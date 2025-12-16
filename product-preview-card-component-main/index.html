@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="images/favicon-32x32.png">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: hsl(30, 38%, 92%);
+      font-family: Arial, sans-serif;
+    }
+    .card{
+      width: 700px;
+      background-color: white;
+      display: flex;
+      padding: 20px;
+      margin: 50px auto;
+      border-radius: 10px;
+    }
+    .card img{
+      border-radius: 10px;
+      width: 300px;
+    }
+    .card-content{
+      margin-left: 30px;
+    }
+    .category{
+      font-size: 12px;
+      color: gray;
+    }
+    h1{
+      margin: 10px 0;
+      font-family: Montserrat;
+      font-weight: 500 700;
+    }
+    .description{
+      color: gray;
+      font-size: 20px;
+      font-family: Fraunces;
+      font-weight: 700;
+    }
+    .price{
+      font-size: 30px;
+      color: hsl(158, 42%, 18%);
+      margin: 20px 0;
+    }
+    .oldprice{
+      text-decoration: line-through;
+      color: gray;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button{
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      border: none;
+      padding: 12px 50px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cart-icon{
+      width: 50px;
+    }
+    button:hover{
+      background-color: hsl(158, 42%, 18%);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="images/image-product-desktop.jpg">
+      <div class="card-content">
+        <br>
+        <p class="category">P E R F U M E</p>
+        <br>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <br>
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL
+        </p>
+        <br>
+        <div style="display: flex; gap: 30px;">
+        <p class="price">$149.99</p>
+        <p class="oldprice">$169.99</p>
+        </div>
+        <br>
+        <button>
+          <img src="images/icon-cart.svg" style="width: 16px; margin-right: 2px;">
+          Add To Cart
+        </button>
+      </div>
+  </div>
+</body>
+</html>
