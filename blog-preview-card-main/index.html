@@ -2,33 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Preview Card</title>
+  <link rel="icon" href="assets/images/favicon-32x32.png">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: hsl(47, 88%, 63%);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card{
+      width: 350px;
+      background: hsl(0, 0%, 100%);
+      border-radius: 15px;
+      box-shadow: 7px 7px 0 black;
+      border: 1px solid black;
+    }
+    .card img{
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+    }
+    .card-content{
+      padding: 20px;
+      font-family: Figtree;
+      font-weight: 600;
+    }
+    .tag{
+      background: hsl(47, 88%, 63%);
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .date{
+      font-size: 14px;
+      margin: 12px 0;
+    }
+    h2{
+      font-size: 20px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+    h2:hover{
+      color: hsl(47, 88%, 63%);
+    }
+    .desc{
+      font-size: 15px;
+      color: gray;
+    }
+    .creator{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+    }
+    .creator img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
   </style>
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <br>
+    <img src="assets/images/illustration-article.svg" >
+    <div class="card-content">
+      <span class="tag"><b>Learning</b></span>
+      <p class="date">Published 21 Dec 2023</p>
+      <h2 style="font-family: Figtree; font-weight: 800;">HTML & CSS foundations</h2>
+      <p class="desc">
+        These languages are the backbone of every website, defining structure, content and presentation.
+      </p>
+      <br>
+      <div class="creator">
+        <img src="assets/images/image-avatar.webp">
+        <span>Greg Hooper</span>
+      </div>
+    </div>
   </div>
 </body>
 </html>
